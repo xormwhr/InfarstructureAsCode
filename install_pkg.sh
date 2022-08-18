@@ -10,5 +10,5 @@ yum install docker-ce docker-ce-cli containerd.io -y
 systemctl enable --now docker
 
 # install kubernetes cluster 
-yum install kubectl-$1 kubelet-$1 kubeadm-$1 -y
+yum install kubectl kubelet kubeadm -y
 systemctl enable --now kubelet

@@ -9,12 +9,6 @@ mkdir -p $HOME/.kube
 cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 chown $(id -u):$(id -g) $HOME/.kube/config
 
-# raw_address for gitcontent
-raw_git="raw.githubusercontent.com/sysnet4admin/IaC/master/manifests" 
-
-# config for kubernetes's network 
-kubectl apply -f https://$raw_git/172.16_net_calico.yaml
-
 # install bash-completion for kubectl 
 yum install bash-completion -y 
 

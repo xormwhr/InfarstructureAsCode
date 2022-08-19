@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# download : curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+# chmod : chmod 700 get_helm.sh
+# ./get_helm.sh
+
+
 # Copyright The Helm Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");

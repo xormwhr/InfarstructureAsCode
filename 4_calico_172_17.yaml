@@ -1,6 +1,9 @@
 # download : curl https://raw.githubusercontent.com/projectcalico/calico/v3.24.0/manifests/calico.yaml -O
 # install : kubectl apply -f calico.yaml
-# cidr : 172.17.0.0/16
+# cidr : 172.17.0.0/16 (사용자 설정) 
+#  - name: CALICO_IPV4POOL_CIDR
+#     value: "172.17.0.0/16"
+
 ---
 # Source: calico/templates/calico-kube-controllers.yaml
 # This manifest creates a Pod Disruption Budget for Controller to allow K8s Cluster Autoscaler to evict

@@ -1,0 +1,11 @@
+# L2Advertisement 설정 IpAddressPool에 설정된 값 가져온다
+# URL : https://metallb.universe.tf/configuration/
+
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: example
+  namespace: metallb-system
+spec:
+  ipAddressPools:
+  - first-pool

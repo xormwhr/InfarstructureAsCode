@@ -34,6 +34,11 @@ setenforce 0
 #enforcing -> permissive
 sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
 
+# firewalld off
+# 방화벽 끄기
+systemctl stop firewalld
+systemctl disable firewalld
+
 # RHEL/CentOS 7 have reported traffic issues being routed incorrectly due to iptables bypassed
 # 브리지 네트워크를 통과하는 IPv4와 IPv6의 패킷을 iptables가 관리하도록 설정
 # 파드의 통신을 iptables로 제어

@@ -14,13 +14,9 @@ yum install vim-enhanced -y
 yum install git -y
 
 # install docker 
-yum install docker-ce-20.10.17-3.el7 \ 
-            docker-ce-cli-20.10.17-3.el7 \
-            containerd.io-1.6.7-3.1.el7 -y
+yum install docker-ce-20.10.17-3.el7 docker-ce-cli-20.10.17-3.el7 containerd.io-1.6.7-3.1.el7 -y
 systemctl enable --now docker
 
 # install kubernetes cluster
-yum install kubectl-1.24.4-0 \
-            kubelet-1.24.4-0 \
-            kubeadm-1.24.4-0 -y
+yum install kubectl-1.25.0-0 kubelet-1.25.0-0 kubeadm-1.25.0-0 -y
 systemctl enable --now kubelet

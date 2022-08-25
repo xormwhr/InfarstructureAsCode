@@ -17,11 +17,15 @@ cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 chown $(id -u):$(id -g) $HOME/.kube/config
 
 # install bash-completion for kubectl 
+# Bash의 kubectl 자동 완성 스크립트는 kubectl completion bash 명령으로 생성할 수 있다. 
+# 셸에서 자동 완성 스크립트를 소싱(sourcing)하면 kubectl 자동 완성 기능이 활성화된다.
 yum install bash-completion -y 
 
 # kubectl completion on bash-completion dir
+# 이제 kubectl 자동 완성 스크립트가 모든 셸 세션에서 제공되도록 해야 한다.
 kubectl completion bash >/etc/bash_completion.d/kubectl
 
 # alias kubectl to k 
+# kubectl에 대한 앨리어스(alias)가 있는 경우, 해당 앨리어스로 작업하도록 셸 자동 완성을 확장할 수 있다.
 echo 'alias k=kubectl' >> ~/.bashrc
 echo 'complete -F __start_kubectl k' >> ~/.bashrc

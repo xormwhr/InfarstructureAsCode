@@ -14,8 +14,8 @@ yum install vim-enhanced -y
 yum install git -y
 
 # install docker 
-yum install docker-ce-3:20.10.9-3.el7 \ 
-            docker-ce-cli-1:20.10.9-3.el7 \
+yum install docker-ce-20.10.17-3.el7 \ 
+            docker-ce-cli-20.10.17-3.el7 \
             containerd.io-1.6.7-3.1.el7 -y
 systemctl enable --now docker
 

@@ -1,5 +1,6 @@
 # IP table 설정
 # URL : https://metallb.universe.tf/configuration/
+# kubectl apply -f 6_2_metallb_ip_config.yaml
 
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

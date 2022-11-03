@@ -71,3 +71,11 @@ crictl config --set image-endpoint=unix:///run/containerd/containerd.sock
 # https://kubernetes.io/ko/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 yum install kubectl-1.25.0-0 kubelet-1.25.0-0 kubeadm-1.25.0-0 --disableexcludes=kubernetes -y
 systemctl enable --now kubelet
+
+# yum install kubectl-1.21.9-0 kubelet-1.21.9-0 kubeadm-1.21.9-0 -y
+
+#######################################
+# install kubernetes cluster
+# single node pod (master node) create pod
+# $ kubectl taint nodes --all node-role.kubernetes.io/master-
+

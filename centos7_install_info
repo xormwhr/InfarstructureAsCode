@@ -1,0 +1,30 @@
+## CentOS7 설치시 WIFI 접속
+$ ip addr ( wifi name ) ex) wlp1s0
+
+## wifi setting
+$ vi /etc/sysconfig/wpa_supplicant
+# INTERFACES="-iwlpls1s0" -i 붙여주여야함
+# DRIVERS="-Dwext"
+
+## NetworkManager Stop
+$ service NetworkManager stop
+$ chkconfig NetworkManager off
+
+## wifi 접속 setting 
+$ wpa_passphrase [wifi name] [wifi password] > /etc/wpa_supplicant/wpa_supplicant.conf
+$ service start wpa_supplicant (X)
+$ systemctl start wpa_supplicant
+
+## Network Setting
+$ ip addr
+$ ip link set enp2s0 down
+$ ip link set wlp1s0 up
+
+# Connect Setting
+$ dhclient
+
+
+
+
+
+

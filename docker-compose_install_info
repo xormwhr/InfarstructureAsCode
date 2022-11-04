@@ -1,0 +1,10 @@
+## docker-compose 설치
+$ sudo curl -L "https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+## docker-compose 실행 권한 부여
+$ sudo chmod +x /usr/local/bin/docker-compose
+
+## 설치된 docker-compose 실행 확인
+$ docker-compose --version
+docker-compose version v2.12.2
+

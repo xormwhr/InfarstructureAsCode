@@ -1,0 +1,11 @@
+## Harbor ##
+
+# https://github.com/goharbor/harbor/releases/tag/v2.6.1
+
+## 참고
+# https://sonhc.tistory.com/975
+
+$ wget https://github.com/goharbor/harbor/releases/download/v2.6.1/harbor-offline-installer-v2.6.1.tgz
+$ tar -zxvf harbor-offline-installer-v2.6.1.tgz
+
+

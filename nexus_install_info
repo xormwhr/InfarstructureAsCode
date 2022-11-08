@@ -1,0 +1,6 @@
+
+  Nexus
+
+  - bulk upload 
+    Url : https://github.com/sonatype-nexus-community/nexus-repository-import-scripts
+    Usage : ./mavenimport.sh -u admin -p admin123 -r http://localhost:8084/repository/maven-releases/

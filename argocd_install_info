@@ -26,4 +26,10 @@ $ argocd login <ARGOCD_SERVER>
 $argocd account update-password
 
 
+## Create User & Role
+https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/#create-new-user
+
+https://intrepidgeeks.com/tutorial/argocd-users-access-and-rbac
+
+https://argo-cd.readthedocs.io/en/stable/operator-manual/rbac/#rbac-permission-structure
 

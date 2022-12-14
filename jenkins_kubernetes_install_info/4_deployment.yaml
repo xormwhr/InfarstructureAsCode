@@ -27,6 +27,9 @@ spec:
             requests:
               memory: "500Mi"
               cpu: "500m"
+          env:
+            - name: JAVA_OPTS
+              value: "-Dorg.apache.commons.jelly.tags.fmt.timeZone=Asia/Seoul" 
           ports:
             - name: httpport
               containerPort: 8080
